@@ -3,9 +3,21 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session = require('express-session');
+var passport = require('passport');
+
+// Load the "secrets" in the .env file
+require('dotenv').config();
+// connect to the database with AFTER the config vars are processed
+require('./config/database');
+//configure passport middleware
+require('./config/passport');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var countriesRouter = require('./routes/countries');
+var reviewsRouter = require('./routes/reviews');
+var spotsRouter = require('./routes/spots');
+var favoritesRouter = require('./routes/favorites');
 
 var app = express();
 
@@ -19,11 +31,30 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({
+  secret: process.env.SECRET,
+  resave: false,
+  saveUninitialized: true
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.use(function(req, res, next) {
+  res.locals.user = req.user;
+  
+  next();
+});
+
+
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/countries', countriesRouter); 
+app.use('/', spotsRouter);
+app.use('/', reviewsRouter);
+// app.use('/', favoritesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
+  console.log(res)
   next(createError(404));
 });
 

@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<table id="list">
+  <thead>
+    <tr>
+      <th>Countries</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- wrtie the line of EJS to iterate over countries using forEach -->
+    <% countries.forEach(function(country) { %>
+      <tr>
+        <td><a href="/countries/<%= country._id %>"><%= country.name %></a></td> 
+      </tr>
+      <!-- close forEach using EJS -->
+      <% }); %>
+  </tbody>
+</table>
+  
+<%- include('../partials/footer') %>
