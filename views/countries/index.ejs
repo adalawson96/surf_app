@@ -3,14 +3,14 @@
 <table id="list">
   <thead>
     <tr>
-      <th>Countries</th>
+      <th>Countries</th><br>
     </tr>
   </thead>
   <tbody>
     <!-- wrtie the line of EJS to iterate over countries using forEach -->
-    <% countries.forEach(function(country) { %>
+   <% countries.forEach(function(country) { %>
       <tr>
-        <td><a href="/countries/<%= country._id %>"><%= country.name %></a></td> 
+       <br><td><a href="/countries/<%= country._id %>"><%= country.name %></a></td> 
       </tr>
       <!-- close forEach using EJS -->
       <% }); %>

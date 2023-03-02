@@ -13,9 +13,9 @@ module.exports = {
   }
   
   function show(req, res) {
-    console.log(req.params.id, 'controllers SPOT.JS line 15')
     Spot.findById(req.params.id, function(err, spot) {
-      res.render('spots/show', { title: spot.name, spot })
+      res.render('spots/show', { title: spot.location, spot })
+      console.log(spot.image)
     })
   };
 

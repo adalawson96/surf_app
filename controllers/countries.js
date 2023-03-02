@@ -1,4 +1,5 @@
 const Country = require('../models/country');
+// const Spot = require('../models/spot');
 
 module.exports = {
     index,
@@ -12,9 +13,15 @@ function index(req, res) {
   };
   
   function show(req, res) {
-    console.log(req.params.id, 'this is a test line 15')
     Country.findById(req.params.id, function(err, country) {
       res.render('countries/show', { title: country.name, country })
-      console.log(country.name)
-    })
+    });
   };
+   //populate  
+      
+    
+  //   Spot.findById(req.params.id,function(err, spot) {
+  //     res.render('countries/spots/show', { title: spot.location, spot})
+  //     console.log(spot.location)
+  //   })
+  // };
