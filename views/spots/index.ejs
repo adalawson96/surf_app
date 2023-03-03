@@ -1,11 +1,7 @@
 <%- include('../partials/header') %>
 
-<table id="list">
-  <thead>
-    <tr>
-      <th>Spots</th>
-    </tr>
-  </thead>
+<!-- SPOT LINKS -->
+<div class="container">
   <tbody>
     <% spots.forEach(function(spot) { %>
       <tr>
@@ -14,7 +10,55 @@
       </tr>
       <% }); %>
   </tbody>
-</table>
-  
+
+<!-- CARD 1 -->
+<div class="card" style="width: 18rem;">
+  <img src="http://www.espn.com/photo/2016/0125/021_Surf_JAWS.JPG" class="card-img-top" alt="Lenny surfing Jaws">
+  <div class="card-body">
+    <h5 class="card-title">Jaws</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Peʻahi, Hawaii</li>
+    <li class="list-group-item">Advanced</li>
+    <li class="list-group-item">Season: Dec. - March</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Jaws</a>
+    <a href="https://magicseaweed.com/Peahi-Jaws-Surf-Report/617/" class="card-link">Forecast</a>
+  </div>
+</div>
+<!-- CARD 2 -->
+<div class="card" style="width: 18rem;">
+  <img src="https://lushpalm.com/wp-content/uploads/2017/10/tamarindo-costa-rica-surf-samba-to-the-sea-10.jpg" class="card-img-top" alt="Nose riding Pico">
+  <div class="card-body">
+    <h5 class="card-title">Pico</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Tamarindo, Costa Rica</li>
+    <li class="list-group-item">Beginner, Intermediate, Advanced</li>
+    <li class="list-group-item">Season: Dec. - April</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Pico</a>
+    <a href="https://magicseaweed.com/Tamarindo-Surf-Report/444/" class="card-link">Forecast</a>
+  </div>
+</div>
+<!-- CARD 3 -->
+<div class="card" style="width: 18rem;">
+  <img src="https://i.imgur.com/KbqSYOm.jpg" class="card-img-top-A" alt="Lenny surfing Jaws">
+  <div class="card-body">
+    <h5 class="card-title">Panga Drops</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"> North end Playa Colorado, Nicaragua</li>
+    <li class="list-group-item">Intermediate, Advanced</li>
+    <li class="list-group-item">Season: April - Sept.</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Panga Drops</a>
+    <a href="https://magicseaweed.com/Panga-Drops-Surf-Report/4741/" class="card-link">Forecast</a>
+  </div>
+</div>
+</div>
 <%- include('../partials/footer') %>
 

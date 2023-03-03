@@ -29,13 +29,11 @@ async function deleteReview (req, res) {
 
 function create(req, res) {
   Spot.findById(req.params.id, function(err, spot) {
-    console.log(req.body, 'testing req')
+    // console.log(req.body, 'testing req')
     // Add the user-centric info to req.body (the new review)
     req.body.userId = req.user._id;
-    
     req.body.userName = req.user.name;
     req.body.userAvatar = req.user.avatar;
-
     // We push an object with the data for the review subdoc into Mongoose arrays
     spot.reviews.push(req.body);
     spot.save(function(err) {

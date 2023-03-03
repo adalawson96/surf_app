@@ -57,6 +57,16 @@ a:hover {
 }
 
 
+/* .card-A {
+  background-color: red;
+  opacity: 0.5;
+}; */
+
+/* .card-body {
+  display: flex;
+  justify-content: center;
+}; */
+
 
 /* .home {
   display: flex;
@@ -112,6 +122,17 @@ a:hover {
   padding: 0 20px 0 30px;
 }
 
+/* SPOTS PAGE */
+.card-img-top {
+  height: 250px;
+  width: 300px;
+};
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
 
 /* REVIEWS */
 #review-section {
@@ -125,7 +146,7 @@ a:hover {
   display: inline-block;
   margin-right: 10px;
 }
-	
+
 .delete-form button {
   color: red;
 }
