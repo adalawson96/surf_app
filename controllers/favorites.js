@@ -1,11 +1,11 @@
-// const Favorite = require('../models/favorite');
+const User = require('../models/user');
 
-// module.exports = {
-//     index
-// };
+module.exports = {
+    index
+};
 
-// function index(req, res) {
-//     Favorite.find({}, function(err, favorites) {
-//       res.render('favorites/index', { title: 'Favorites', favorites });
-//     });
-//   };
+function index(req, res) {
+    // User.favorites.find({}, function(err, favorites) {
+        res.render('favorites/index', { title: 'Favorites' });
+    // });
+  };

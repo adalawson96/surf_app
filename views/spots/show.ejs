@@ -14,12 +14,14 @@
 </form>
 
 <br><br><div id="reveiw-section"><h2>Reviews</h2>
-<form id="add-review-form" method="POST"
+<% if (user) {%>
+  <form id="add-review-form" method="POST"
   action="/spots/<%= spot._id %>/reviews">
   <label>Review:</label>
   <textarea name="content"></textarea>
   <input type="submit" value="Add Review">
 </form>
+<% } %>
 </div>
 
 <% if (spot.reviews.length) { %>
@@ -37,6 +39,7 @@
         </tr>
         <tr>
           <td><%= review.createdAt.toLocaleDateString() %>
+            <% if (user) {%>
             <form action="/spots/<%= spot._id %>/<%= review._id %>/reviews?_method=DELETE"
               class="delete-form" method="POST">
             <button type="submit">X</button>
@@ -45,7 +48,7 @@
               <input name="content" value="<%= review.content %>">
               <button type="submit">Edit</button>
             </form>
-
+            <% } %>
           </td>
         </tr>
       <% }); %>

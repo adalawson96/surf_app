@@ -51,7 +51,7 @@ app.use('/', indexRouter);
 app.use('/countries', countriesRouter); 
 app.use('/spots', spotsRouter);
 app.use('/', reviewsRouter);
-// app.use('/', favoritesRouter);
+app.use('/', favoritesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

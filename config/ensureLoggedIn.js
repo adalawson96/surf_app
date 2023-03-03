@@ -1,5 +1,3 @@
-const ensureLoggedIn = require('../config/ensureLoggedIn');
-
 // Middleware for routes that require a logged in user
 module.exports = function(req, res, next) {
     // Pass the req/res to the next middleware/route handler

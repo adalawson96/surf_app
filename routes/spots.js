@@ -1,9 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var spotsCtrl = require('../controllers/spots');
-const ensureLoggedIn = require('../config/ensureLoggedIn');
-
-router.get('/new', ensureLoggedIn, spotsCtrl.new);
+// const ensureLoggedIn = require('../config/ensureLoggedIn');
 
 // GET /spots (display all spots)
 router.get('/', spotsCtrl.index);
@@ -12,6 +10,6 @@ router.get('/', spotsCtrl.index);
 router.get('/:id', spotsCtrl.show);
 
 // Use ensureLoggedIn middleware to protect routes
-router.post('/', ensureLoggedIn, spotsCtrl.create);
+// router.post('/', ensureLoggedIn, spotsCtrl.create);
 
 module.exports = router;

@@ -12,7 +12,7 @@ router.post('/spots/:id/reviews', ensureLoggedIn, reviewsCtrl.create);
 router.delete('/spots/:spotId/:id/reviews', ensureLoggedIn, reviewsCtrl.delete);
 
 // PUT /reviews/:id
-router.put('/reviews/:id', reviewsCtrl.update);
+router.put('/reviews/:id', ensureLoggedIn, reviewsCtrl.update);
 
 
 module.exports = router;
