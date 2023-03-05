@@ -1,13 +1,14 @@
 <%- include('../partials/header') %>
 
-<th>Favorites:</th>
 <table id="favorites">
   <thead>
     <tr>
+      <th>favorites</th>
       <% favorites.forEach(function(favorite) { %>
        <h4><%= favorite.name %></h4>
       <% }); %> 
     </tr>
   </thead>
+
 
 <%- include('../partials/footer') %>

@@ -32,6 +32,10 @@ body > nav {
 
 }
 
+a:link {
+  text-decoration: none;
+}
+
 a:hover {
   background-color: rgba(190, 190, 141, 0.538);
 }
