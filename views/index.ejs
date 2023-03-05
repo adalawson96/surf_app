@@ -1,10 +1,95 @@
 <%- include('./partials/header') %>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+    
+    <!-- Code -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img  src="https://www.indosurfcrew.com/wp-content/uploads/2018/10/DSC_1689.jpg" class="d-block w-100" alt="tropic-wave"/>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.squarespace-cdn.com/content/v1/56e9a86ef8508290044e3cc3/1661242793593-SEEGY5LBV6PYN14BFLZQ/Physics+of+noseriding+womens+surf+film+festival?format=750w" class="d-block w-100" alt="nose-riding"/>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.surfertoday.com/images/stories/surfingimpossibles.jpg" class="d-block w-100" alt="rolling-waves"/>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </body>
+</html>
+
+
+  <!-- CARDS -->
+  <br><div class="card-group">
+    <div class="card">
+      <img src="https://media.wired.com/photos/60a7d7c5908e9a4c709b9df3/1:1/w_1600,h_1600,c_limit/Science_coral_1283902606.jpg" class="card-img-top" alt="coral">
+      <div class="card-body">
+        <h5 class="card-title">'Conserve the Rainforests of the Sea'</h5>
+        <p class="card-text">
+          Reef corals build homes for millions of species of marine life, they support healthy ocean food webs, and they protect our coastlines by reducing flood risks. Get involved in protecting what you love.</p>
+        <a href="https://plantamillioncorals.org/" class="coral-button">LEARN MORE!</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://xsurf.es/wp-content/uploads/2021/07/Las-mejores-cremas-solares-2021-2.jpg" class="card-img-top" alt="reef">
+      <div class="card-body">
+        <h5 class="card-title">Reef Safe Sunscreen</h5>
+        <p class="card-text">Why is it important to have reef-safe sunscreen?
+          They are better for your skin. That is because reef friendly sunscreens generally exclude harsh chemicals such as benzophenones, parabens, and other skin irritants that are also environmental pollutants. Here are some recomendations: </p>
+          <a href="https://www.albabotanica.com/products-alba/sheer-mineral-sunscreen/" class="alba-botanica">ALBA BOTANICA</a>
+          <br><a href="https://www.badgerbalm.com/collections/mineral-sunscreen" class="badger">BADGER</a>
+          <br><a href="https://gowaxhead.com/" class="waxhead">WAXHEAD</a>
+          <br><a href="https://www.babobotanicals.com/products/zinc-sunscreen-lotion-fragrance-free" class="babo-botanicals">BABO BOTANICALS</a><br>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.theinertia.com/wp-content/uploads/2021/05/Roew-03.jpg" class="card-img-top" alt="packed-surfboard">
+      <div class="card-body">
+        <h5 class="card-title">Most surfer-friendly airlines</h5>
+        <p class="card-text">If you are constantly travelling with surfboards check out these blogs to find the best arilines.</p>
+        <a href="https://lushpalm.com/surfboard-bag-fees/" class="lush-palm">LUSH-PALM</a>
+       <br><a href="https://www.wavetribe.com/blogs/surf-travel/surfboard-airline-fees" class="stay-stoked">STAY-STOKED</a>
+      </div>
+    </div>
+  </div>
   
-  
-  <body id ='home-page'>
-  <h1><%= title %></h1>
-  <div class="banner_image"></div>
+
+
+
+
+
+
+
+  <!-- NAV BAR DROPWDOWN -->
   
   <!-- <div id="all-countries">
     <a id="countries" href="/countries">All Countries </a>

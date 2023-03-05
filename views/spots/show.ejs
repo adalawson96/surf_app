@@ -17,7 +17,6 @@
 <% if (user) {%>
   <form id="add-review-form" method="POST"
   action="/spots/<%= spot._id %>/reviews">
-  <label>Review:</label>
   <textarea name="content"></textarea>
   <input type="submit" value="Add Review">
 </form>

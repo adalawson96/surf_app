@@ -20,11 +20,20 @@ const reviewSchema = new Schema({
 // // GET /spots (display all spots)
 
 const spotSchema = new Schema({
+  level: {
+    type: String,
+  },
+  forecast: {
+    type: String,
+  },
+  coverImage: {
+    type: String,
+  },
   image: {
-    type: String
+    type: String,
   },
   spotImage: {
-    type: String
+    type: String,
   },
   name: {
         type: String,

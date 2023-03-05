@@ -1,11 +1,26 @@
+const { save } = require('debug/src/browser');
 const User = require('../models/user');
 
 module.exports = {
-    index
+    index,
+    update
 };
 
-function index(req, res) {
-    // User.favorites.find({}, function(err, favorites) {
-        res.render('favorites/index', { title: 'Favorites' });
-    // });
-  };
+async function index(req, res) {
+   user = await User.findById(req.user._id) 
+   .populate('favorites')
+   .exec()
+   console.log(user, 'USER')
+        res.render('favorites/index', { title: 'Favorites', favorites: user.favorites });
+};
+
+
+async function update(req, res) {
+    user = await User.findOne(req.user._id)
+    if (!user.favorites.includes(req.params.id)) {
+        user.favorites.push(req.params.id)
+       await user.save()
+    };
+    console.log(user, 'TESTING')
+    res.render('favorites/index', { title: 'Favorites'})
+};

@@ -1,9 +1,10 @@
 * {
   box-sizing: border-box;
-  font-family: Helvetica;
-  color: #424748;
+  font-family: sans-serif;
+  color: #0e0f0f;
 }
 
+/* HOME */
 body {
   margin: 0;
   height: 100vh;
@@ -35,14 +36,18 @@ a:hover {
   background-color: rgba(190, 190, 141, 0.538);
 }
 
+/* CAROUSEL IMAGE */
+.carousel-item {
+  height: 50vh;
+}
+
+/* INDIVIDUAL SPOT PAGE  */
 #spot-show {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 216, 145, 0.509);
-  /* inline-size: 300px; */
-  /* overflow-wrap: break-word; */
 }
 
 #spot-show > img {
@@ -51,54 +56,6 @@ a:hover {
   padding: 10px 0px 20px 0px;
 }
 
-#home-page {
-  background-image: url('https://kalbarrijettysurf.com.au/wp-content/uploads/2016/06/backhand-nohands-banner.jpg');
-  background-repeat: no-repeat;
-}
-
-
-/* .card-A {
-  background-color: red;
-  opacity: 0.5;
-}; */
-
-/* .card-body {
-  display: flex;
-  justify-content: center;
-}; */
-
-
-/* .home {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 34px;
-  padding: 0 20px 0 30px;
-} */
-
-/* .allCountries {
-  display: flex;
-  justify-content: center;
-  padding: 0 20px 0 30px;
-} */
-
-/* .favorites {
-  display: flex;
-  padding: 0 20px 0 30px;
-} */
-
-#country-label {
-  display: flex;
-  justify-content: flex-end;
-}
-
-#list {
-  display: flex;
-  /* justify-content: center; */
-  flex-direction: column;
-  align-items: flex-start; 
-}
 
 /* LOG-IN */
 .login {
@@ -125,16 +82,11 @@ a:hover {
 /* SPOTS PAGE */
 .card-img-top {
   height: 250px;
-  width: 300px;
+  width: 290px;
 };
 
-.container {
-  display: flex;
-  flex-direction: row;
-}
 
-
-/* REVIEWS */
+/* REVIEWS ON INDIVIDUAL SPOT PAGE*/
 #review-section {
   display: flex;
   /* flex-direction: row; */
@@ -142,7 +94,7 @@ a:hover {
   align-items: center;
 }
 
-/* .delete-form {
+.delete-form {
   display: inline-block;
   margin-right: 10px;
 }
@@ -150,10 +102,7 @@ a:hover {
 .delete-form button {
   color: red;
 }
-	
-li {
-  list-style: none;
-} */
+
 
 
 

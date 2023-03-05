@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var favoritesCtrl = require('../controllers/favorites');
+const ensureLoggedIn = require('../config/ensureLoggedIn');
 
 /* GET users listing. */
 // router.get('/', function(req, res, next) {
@@ -8,7 +9,11 @@ var favoritesCtrl = require('../controllers/favorites');
 // });
 
 // GET /
-router.get('/favorites', favoritesCtrl.index);
+router.get('/favorites', ensureLoggedIn, favoritesCtrl.index);
+
+// UPDATE 
+router.put('/favorites/:id', ensureLoggedIn, favoritesCtrl.update);
+
 
 
 module.exports = router;
