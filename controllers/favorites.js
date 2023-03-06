@@ -19,5 +19,5 @@ async function update(req, res) {
         user.favorites.push(req.params.id)
        await user.save()
     };
-    res.render('favorites/index', { title: 'Favorites', favorites: user.favorites });
+    res.redirect('/favorites');
 };

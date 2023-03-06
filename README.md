@@ -21,8 +21,10 @@ The user wants:
 
 # Technologies Used
 
-- Application: Node.js, ExpressEJS, Express EJS layouts, CSS/Bootstrap, HTML, JavaScript
+- Application: Node.js, ExpressEJS, Express EJS layouts, CSS/Bootstrap, HTML, JavaScript, MongoDB
+- OAuth Authentication 
 - Deployment: Heroku
+
 
 # Getting Started
 
