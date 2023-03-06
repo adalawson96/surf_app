@@ -14,7 +14,7 @@ The user wants:
 
 # Screenshot
 
-<img src="hhttps://i.imgur.com/ThElPzw.png">
+<img src="https://i.imgur.com/ThElPzw.png">
 <img src="https://i.imgur.com/N9PzGXB.png">
 <img src="https://i.imgur.com/vW3ewkL.png">
 <img src="https://i.imgur.com/2H4Lq0U.png">
