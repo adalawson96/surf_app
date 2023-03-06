@@ -10,7 +10,6 @@ async function index(req, res) {
    user = await User.findById(req.user._id) 
    .populate('favorites')
    .exec()
-   console.log(user, 'USER')
         res.render('favorites/index', { title: 'Favorites', favorites: user.favorites });
 };
 
@@ -21,6 +20,5 @@ async function update(req, res) {
         user.favorites.push(req.params.id)
        await user.save()
     };
-    console.log(user, 'TESTING')
     res.render('favorites/index', { title: 'Favorites'})
 };

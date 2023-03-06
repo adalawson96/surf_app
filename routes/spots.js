@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var spotsCtrl = require('../controllers/spots');
-// const ensureLoggedIn = require('../config/ensureLoggedIn');
 
 // GET /spots (display all spots)
 router.get('/', spotsCtrl.index);

@@ -17,11 +17,4 @@ function index(req, res) {
       res.render('countries/show', { title: country.name, country })
     });
   };
-   //populate  
-      
-    
-  //   Spot.findById(req.params.id,function(err, spot) {
-  //     res.render('countries/spots/show', { title: spot.location, spot})
-  //     console.log(spot.location)
-  //   })
-  // };
+ 

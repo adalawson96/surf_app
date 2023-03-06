@@ -82,85 +82,11 @@
     </div>
   </div>
   
-
-
-
-
-
-
-
-  <!-- NAV BAR DROPWDOWN -->
-  
-  <!-- <div id="all-countries">
-    <a id="countries" href="/countries">All Countries </a>
-  </div>
-  <div id='favorites'>
-    <a id="favorites" href="/favorites">Favorites </a>
-  </div> -->
-
-<!-- 
-<button type="button" class="northAmerica">North America</button>
-  <div class="northAmerica">
-    <p>
-      <li class="canada">Canada</li>
-      <li class="us">US</li>
-      <li class="mexico">Mexico</li>
-   </p>
-  </div>
-
-<button type="button" class="centralAmerica">Central America</button>
-  <div class="centralAmerica">
-   <p> 
-    <li class="nicaragua"> Nicaragua</li>
-    <li class="costaRica">Costa Rica</li>
-    <li class="panama">Panama</li>
-    </p>
-  </div>
-
-<button type="button" class="southAmerica">South America</button>
-  <div class="southAmerica">
-    <p>
-      <li class="brazil">Brazil</li>
-      <li class="argentina">Argentina</li>
-      <li class="chile">Chile</li>
-      <li class="peru">Peru</li>
-    </p>
-  </div>
-</body> -->
-
-
-<!-- var lists = document.getElementsByClassName("southAmerica");
-  for(var i=0; i<countries.length; i++) {
-    var text = lists[i].textContent;
-    lists[i].textContent = "";
-    var a = document.createElement("a");
-    a.href = "#"+text;
-    a.textContent = text;
-    southAmerica[i].appendChild(a);
-} -->
-
-
 <%- include('./partials/footer') %>
 
 
 
 
-<!-- 
-  var coll = document.getElementsByClassName("northAmerica");
-  var i;
-
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
-  }
- -->
 
 
 
@@ -168,39 +94,3 @@
 
 
 
-
-
-
-
-
-
-<!-- <div id="list">
-    <form>
-        <label>North America</label>
-          <select name="northAmerica" id="northAmerica">
-            <option value="Canada" id="canada">Canada</option>
-            <option value="US" id="us">US</option>
-            <option value="Mexico" id="mexico">Mexico</option>
-          </select>
-          <a href="/countries/">
-            <button type="button">Go</button>
-          </a>
-        <label>Central America</label>
-          <select name="centralAmerica" id="centralAmerica">
-            <option value="Salvador" id="salvador">Salvador</option>
-            <option value="Nicaragua" id="nicaragua">Nicaragua</option>
-            <option value="CostaRica" id="costaRica">Costa Rica</option>
-            <option value="Panama" id="Panama">Panama</option>
-          </select>
-            <button type="button">Go</button>
-          
-          <label>South America</label>
-          <select name="southAmerica" id="southAmerica">
-            <option value="Brazil" id="brazil">Brazil</option>
-            <option value="Argentina" id="argentina">Argentina</option>
-            <option value="Chile" id="chile">Chile</option>
-            <option value="Peru" id="peru">Peru</option>
-          </select>
-            <button type="button">Go</button>
-    </form>
-  </div> -->
