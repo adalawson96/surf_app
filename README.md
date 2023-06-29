@@ -3,7 +3,7 @@
 Nalu Finder is an app that helps find surf spots that you want to go visit and learn more about the spot. This app is a great way to “save spots” and leave comments or tips for others to see. 
 
 Click
-<a href="https://surf-app9.herokuapp.com/">HERE</a>
+<!-- <a href="">HERE</a> -->
 to deploy app
 
 # User Profile
@@ -23,7 +23,7 @@ The user wants:
 
 - Application: Node.js, ExpressEJS, Express EJS layouts, CSS/Bootstrap, HTML, JavaScript, MongoDB
 - OAuth Authentication 
-- Deployment: Heroku
+- Deployment: Netifly
 
 
 # Getting Started
